@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "starknet-spells-goerli"
+name = "starknet-spells-mainnet"
 version = "0.0.1"
-description = "Starknet Spells Goerli"
+description = "Starknet Spells Mainnet"
 authors = ["MakerDAO"]
 
 [tool.poetry.dependencies]
