@@ -75,9 +75,9 @@ describe("mainnet spell", () => {
     );
 
     predeployedAccounts = [];
-    for (const { address, private_key } of await (
-      await hre.starknet.devnet.getPredeployedAccounts()
-    ).slice(0, 2)) {
+    for (const { address, private_key } of
+      (await hre.starknet.devnet.getPredeployedAccounts()).slice(0, 2)
+    ) {
       const account =
         await hre.starknet.OpenZeppelinAccount.getAccountFromAddress(
           address,
