@@ -18,32 +18,3 @@ export async function getL2ContractAt(
   });
   return factory.getContractAt(address);
 }
-
-export interface SendMessageToL2Params {
-  l2_contract_address: string;
-  entry_point_selector: string;
-  l1_contract_address: string;
-  payload: string[];
-  nonce: string;
-}
-
-export interface SendMessageToL2Result {
-  transaction_hash: string;
-}
-
-// replace with a call on devnet object when it is available
-export async function sendMessageToL2(
-  hre: HardhatRuntimeEnvironment,
-  params: SendMessageToL2Params
-) {
-  return (
-    // @ts-ignore
-    (
-      await hre.starknet.devnet.requestHandler(
-        "/postman/send_message_to_l2",
-        "POST",
-        params
-      )
-    ).data as SendMessageToL2Result
-  );
-}

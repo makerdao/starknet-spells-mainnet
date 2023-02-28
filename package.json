@@ -20,7 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.1",
-    "@shardlabs/starknet-hardhat-plugin": "^0.7.1",
+    "@shardlabs/starknet-hardhat-plugin": "^0.7.3",
     "@types/lodash": "^4.14.191",
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.11.13",
